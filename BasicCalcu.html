@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Basic Calculator</title>
+	    <link rel="stylesheet" type="text/css" href="styles.css">
+	    <meta charset = "utf-8">
+	</head>
+
+<body>
+	<header>
+		<strong>Basic Calculator</strong>
+	</header>
+	<nav>
+		<p>
+			<input type="text" class="button" readonly size="18" id="d">
+			<input type="button" class="btn" value="C" onclick='c("")'>
+		</p>
+    	<p>
+    		<input type="button" class="btn num" value="7" onclick='v("7")'>
+			<input type="button" class="btn" value="8" onclick='v("8")'>
+		    <input type="button" class="btn" value="9" onclick='v("9")'>
+			<input type="button" class="btn" value="*" onclick='v("*")'>
+    	</p>
+    	<p>
+    		<input type="button" class="btn num" value="4" onclick='v("4")'>
+			<input type="button" class="btn" value="5" onclick='v("5")'>
+		    <input type="button" class="btn" value="6" onclick='v("6")'>
+			<input type="button" class="btn" value="/" onclick='v("/")'>
+    	</p>
+    	<p>
+    		<input type="button" class="btn num" value="1" onclick='v("1")'>
+			<input type="button" class="btn" value="2" onclick='v("2")'>
+		    <input type="button" class="btn" value="3" onclick='v("3")'>
+			<input type="button" class="btn" value="+" onclick='v("+")'>
+    	</p>
+    	<p>
+    		<input type="button" class="btn num" value="0" onclick='v("0")'>
+			<input type="button" class="btn" value="." onclick='v(".")'>
+		    <input type="button" class="btn" value="=" onclick='e()'>
+			<input type="button" class="btn" value="-" onclick='v("-")'>
+    	</p>
+	</nav>
+
+	<script>
+
+	function c(val) {
+
+		document.getElementById("d").value=val;
+	}
+	function v(val) {
+		
+		document.getElementById("d").value+=val;
+	}
+	function e() { 
+
+		try { 
+		  c(eval(document.getElementById("d").value)) 
+		} 
+		catch(e) {
+		  c('Error') 
+		} 
+	}  
+	</script>
+</body>
+</html>

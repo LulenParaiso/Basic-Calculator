@@ -1,0 +1,31 @@
+header {
+	text-align: center;
+	font-size: 50px;
+}
+nav {
+	background-color: black;
+	height: 290px;
+	width: 330px;
+	margin-top: 20px;
+	margin-left: 500px;
+	border-radius: 5px;
+}
+.button {
+	margin-top: 20px;
+	margin-left: 43px;
+	width: 175px;
+	height: 30px;
+	opacity: 0.9;
+	border-radius: 5px;
+}
+.btn {
+	height: 35px;
+	width: 50px;
+	border-radius: 3px;
+	font-weight: bold;
+	font-size: 16px;
+	margin-left: 10px;
+}
+.btn.num {
+	margin-left: 43px;
+}
